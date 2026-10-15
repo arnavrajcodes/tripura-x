@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tripura-X · 3D model</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/model.css">
+</head>
+
+<body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <div id="app">
+    <canvas id="c"></canvas>
+    <div id="fade"></div>
+
+    <header class="hud title">
+      <img class="mlogo" src="assets/logo-128.png" width="64" height="64" alt="Tripura-X logo">
+      <div>
+        <h1>TRIPURA-X</h1>
+        <p>Sky · Road · Water</p>
+      </div>
+    </header>
+
+    <section class="hud mode">
+      <span class="tag" id="modeTag">ROAD MODE</span>
+      <p id="modeDesc"></p>
+      <div class="bar"><i id="bar"></i></div>
+    </section>
+
+    <nav class="hud controls">
+      <button data-m="auto" class="on">Auto</button>
+      <button data-m="road">Road</button>
+      <button data-m="water">Water</button>
+      <button data-m="foil">Foil</button>
+      <button data-m="fly">Flight</button>
+      <button id="cine" class="toggle on">Cinematic</button>
+      <a href="presentation.html" target="_blank" rel="noopener" id="present">Presentation</a>
+    </nav>
+
+    <footer class="credit">Designed by <b>Arnav Rajpurohit</b> &nbsp;·&nbsp; Inspired by the Tripura Vimana, described
+      in the Vaimanika Shastra</footer>
+
+    <p class="hud hint">Drag to orbit · Scroll to zoom · H hides the interface<br>Concept model · figures are design
+      estimates</p>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/model.js"></script>
+
+</body>
+
+</html>
